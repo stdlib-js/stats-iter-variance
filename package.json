@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/stats-iter-variance",
+  "version": "0.0.0",
+  "description": "Compute the unbiased sample variance over all iterated values.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-iter-variance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "variance",
+    "sample variance",
+    "unbiased",
+    "var",
+    "dispersion",
+    "standard deviation",
+    "stdev",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
