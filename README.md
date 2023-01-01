@@ -43,14 +43,30 @@ The [unbiased sample variance][sample-variance] is defined as
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-variance
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@deno/mod.js';
+var itervariance = require( '@stdlib/stats-iter-variance' );
 ```
 
 #### itervariance( iterator\[, mean] )
@@ -58,7 +74,7 @@ import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-varia
 Computes the [unbiased sample variance][sample-variance] over all [iterated][mdn-iterator-protocol] values.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0 ] );
 
@@ -69,7 +85,7 @@ var s2 = itervariance( arr );
 If the mean is already known, provide a `mean` argument.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0 ] );
 
@@ -102,8 +118,8 @@ var s2 = itervariance( arr, 2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@deno/mod.js';
+var runif = require( '@stdlib/random-iter-uniform' );
+var itervariance = require( '@stdlib/stats-iter-variance' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -154,7 +170,7 @@ console.log( 'Variance: %d.', s2 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -171,7 +187,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -220,9 +236,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean/tree/deno
+[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean
 
-[@stdlib/stats/iter/stdev]: https://github.com/stdlib-js/stats-iter-stdev/tree/deno
+[@stdlib/stats/iter/stdev]: https://github.com/stdlib-js/stats-iter-stdev
 
 <!-- </related-links> -->
 
