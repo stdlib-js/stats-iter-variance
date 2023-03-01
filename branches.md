@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/iter/variance"
-click B href "https://github.com/stdlib-js/stats-iter-variance/tree/main"
-click C href "https://github.com/stdlib-js/stats-iter-variance/tree/production"
-click D href "https://github.com/stdlib-js/stats-iter-variance/tree/esm"
-click E href "https://github.com/stdlib-js/stats-iter-variance/tree/deno"
-click F href "https://github.com/stdlib-js/stats-iter-variance/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/iter/variance"
+%% click B href "https://github.com/stdlib-js/stats-iter-variance/tree/main"
+%% click C href "https://github.com/stdlib-js/stats-iter-variance/tree/production"
+%% click D href "https://github.com/stdlib-js/stats-iter-variance/tree/esm"
+%% click E href "https://github.com/stdlib-js/stats-iter-variance/tree/deno"
+%% click F href "https://github.com/stdlib-js/stats-iter-variance/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/iter/variance
