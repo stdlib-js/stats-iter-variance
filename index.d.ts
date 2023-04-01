@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,16 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Compute the unbiased sample variance over all iterated values.
+* Computes the unbiased sample variance over all iterated values.
 *
-* @module @stdlib/stats-iter-variance
+* @param iterator - input iterator
+* @param mean - known mean
+* @returns unbiased sample variance
 *
 * @example
-* var runif = require( '@stdlib/random-iter-uniform' );
-* var itervariance = require( '@stdlib/stats-iter-variance' );
+* var runif = require( `@stdlib/random/iter/uniform` );
 *
 * var rand = runif( -10.0, 10.0, {
 *     'iter': 100
@@ -34,12 +39,9 @@
 * var s2 = itervariance( rand );
 * // returns <number>
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function itervariance( iterator: Iterator, mean?: number ): number | null; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
 
-module.exports = main;
+export = itervariance;
