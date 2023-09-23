@@ -65,6 +65,11 @@ s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2
 ## Usage
 
 ```javascript
+import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-variance/tags). For example,
+
+```javascript
 import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@v0.1.0-esm/index.mjs';
 ```
 
@@ -123,7 +128,7 @@ var s2 = itervariance( arr, 2.0 );
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@v0.1.0-esm/index.mjs';
+import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
