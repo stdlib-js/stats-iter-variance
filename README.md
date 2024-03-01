@@ -58,19 +58,32 @@ s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-variance
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-variance/tags). For example,
-
-```javascript
-import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@v0.2.1-deno/mod.js';
+var itervariance = require( '@stdlib/stats-iter-variance' );
 ```
 
 #### itervariance( iterator\[, mean] )
@@ -78,7 +91,7 @@ import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-varia
 Computes the [unbiased sample variance][sample-variance] over all [iterated][mdn-iterator-protocol] values.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0 ] );
 
@@ -89,7 +102,7 @@ var s2 = itervariance( arr );
 If the mean is already known, provide a `mean` argument.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0 ] );
 
@@ -122,8 +135,8 @@ var s2 = itervariance( arr, 2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itervariance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-variance@deno/mod.js';
+var runif = require( '@stdlib/random-iter-uniform' );
+var itervariance = require( '@stdlib/stats-iter-variance' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -174,7 +187,7 @@ console.log( 'Variance: %d.', s2 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -204,8 +217,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-iter-variance.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-iter-variance
 
-[test-image]: https://github.com/stdlib-js/stats-iter-variance/actions/workflows/test.yml/badge.svg?branch=v0.2.1
-[test-url]: https://github.com/stdlib-js/stats-iter-variance/actions/workflows/test.yml?query=branch:v0.2.1
+[test-image]: https://github.com/stdlib-js/stats-iter-variance/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-iter-variance/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-iter-variance/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-iter-variance?branch=main
@@ -243,9 +256,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean/tree/deno
+[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean
 
-[@stdlib/stats/iter/stdev]: https://github.com/stdlib-js/stats-iter-stdev/tree/deno
+[@stdlib/stats/iter/stdev]: https://github.com/stdlib-js/stats-iter-stdev
 
 <!-- </related-links> -->
 
